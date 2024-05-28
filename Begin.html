@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript for Job</h1>
+
+   <script>
+       console.log("Welcome to Javascript!!");
+
+       var name = "Rohit Sharma"; // string
+       var id = 45; //int -> number
+       var avg = 55.55; //float -> number
+       var isLoggedIn = true; //boolean
+
+       var marks = [91 , 53 , 86 , 99 , 97 , 92];
+       var arr = [ 100 , 89.67 , "Javascript" , true , [78,99,66]];
+       console.log(name);
+       console.log(id);
+       console.log(avg);
+       console.log(isLoggedIn);
+       console.log(marks);
+       console.log(arr[2]);
+      
+       //object creating
+       var obj = {
+          name : "Akshay Saini",
+          age : 30,
+          company : "Namaste Dev",
+          skills : ["JS" , "React" , "Node"],
+          isGoodTrainer : "No1 in World",
+          sayHello : function() {
+             console.log("Namaste Javascript");
+          },
+          getDetails : function(){
+            console.log(this.name , this.age , this.company);
+          }
+       }
+
+       console.log(obj);
+       console.log(obj.isGoodTrainer);
+       obj.sayHello();
+       obj.getDetails();
+   </script>
+</body>
+</html>

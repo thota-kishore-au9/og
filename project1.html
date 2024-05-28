@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+</head>
+<body style="background-color: lightcoral;">
+   <h1 id="demo">OG</h1>
+   <button onclick="redBg()">Red</button>
+   <button onclick="pinkBg( )">pink</button>
+   <button onclick="black()">black</button>
+   <button onclick="darkblueBg()">darkblue</button>
+
+   <script>
+      
+      function redBg() {
+        document.body.style.backgroundColor = "red";
+        document.getElementById('demo').style.color= "white";
+      }
+
+      function pinkBg() {
+         document.body.style.backgroundColor = "pink";
+       }
+
+       function black() {
+         document.body.style.backgroundColor = "black";
+       }
+
+       function darkblueBg() {
+         document.body.style.backgroundColor = "darkblue";
+       }
+
+   </script>
+</body>
+</html>

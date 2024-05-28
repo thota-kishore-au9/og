@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG</title>
+    <style>
+       .image-container {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         margin-top: -10px;
+       }
+       .image-card {
+         width: 300px;
+         box-shadow: 0 0 22px rgba(0, 0, 0, 0.1);
+       }
+       .image-card-container {
+         width: 100%;
+         border-radius: 5px 5px 0 0;
+         padding: 5px 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+       }
+       .container {
+         text-align: center;
+       }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <h1 style=" color: red;">OG</h1>
+   </div>
+   <div class="image-container">
+     <div class="image-card" id="card1">
+        <div class="name">
+         <h1 id = "ac1">Pawan Kalyan</h1>
+        </div>
+       <div class="image-card-container">
+         <img src="./images/pk.jpg">
+       </div>
+       <div class="details">
+        <p id="demo">Konidela Pawan Kalyan (born Konidela Kalyan Babu; 2 September 1968 or 1971) is an Indian actor, politician, filmmaker, martial artist, and philanthropist who works in Telugu cinema. Known for his unique acting style and mannerisms, he has a large fan base and a cult following. One of the highest-paid actors of Indian cinema. He is also the founder of the Jana Sena Party.</p>
+       </div>
+      <div class="button">
+       <button onclick="red()">Pawan</button>
+      </div>
+     </div>
+     <div class="image-card" id="card2">
+        <div class="name">
+         <h1 id = "ac2">Priyanka Mohan</h1>
+        </div>
+       <div class="image-card-container">
+         <img src="./images/priyanka-mohan-1 - Copy.png">
+       </div>
+       <div class="details">
+        <p id="demo2">Born in November 1994, Priyanka Arul Mohan is an Indian actress best known for her roles in Tamil and Telugu movies. In addition to playing the lead role in the Telugu film Gang Leader (2019), the Tamil films Doctor (2021), Don (2022), and Etharkkum Thunindhavan (2022), she made her acting debut in the Kannada film Ondh Kathe Hella (2019).</p>
+       </div>
+      <div class="button">
+       <button onclick="pink()">Priyanka</button>
+      </div>
+     </div>
+     <div class="image-card" id="card3">
+        <div class="name">
+         <h1 id="ac3">Sujeeth</h1>
+        </div>
+       <div class="image-card-container">
+         <img src="./images/sujeeth.jpeg">
+       </div>
+       <div class="details">
+        <p id="demo3">Screenwriter and director Sujeeth Reddy is from India. At the age of 23, he made his Telugu cinematic directing debut with the romantic comedy thriller Run Raja Run. Run Raja Run won him the 2015 SIIMA Award for Best Debut Director (Telugu).At seventeen, Sujeeth began making short films. He has directed more than thirty short films and graduated with a degree in film from the LV Prasad Film & TV Academy in Chennai.He got a chance OG with Pawan Kalyan.</p>
+       </div>
+      <div class="button">
+       <button onclick="black()">Sujeeth</button>
+      </div>
+     </div>
+   </div>
+   <script>
+    function red() {
+      document.getElementById('ac1').style.color = "white";
+        document.getElementById('demo').style.color = "white";
+        var card1 = document.getElementById('card1');
+        card1.style.backgroundColor = "darkred";
+    }
+
+    function pink() {
+      document.getElementById('ac2').style.color = "white";
+        document.getElementById('demo2').style.color = "white";
+        var card1 = document.getElementById('card2');
+        card1.style.backgroundColor = "pink";
+    }
+
+    function black() {
+        document.getElementById('demo3').style.color = "white";
+        document.getElementById('ac3').style.color = "white";
+        var card3 = document.getElementById('card3');
+        card3.style.backgroundColor = "black";
+    }
+   </script>
+</body>
+</html>

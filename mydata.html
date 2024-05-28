@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+   
+   <script>
+      var rootElement = document.createElement('div');
+      rootElement.id = "root";
+      rootElement.className = "parent";
+     rootElement.style.backgroundColor = "white";
+     var textNode = document.createTextNode("Thota Ram Kishore(Btech)");
+    // var myh1 = document.createElement('h1');
+    // myh1.innerHTML = "Thota Ram Kishore(BTech)";
+    rootElement.appendChild(textNode);
+     console.log(rootElement);
+     document.body.appendChild(rootElement);
+   </script>
+</body>
+</html>

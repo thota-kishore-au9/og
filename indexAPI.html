@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript runtime environment</title>
+</head>
+<body>
+    <h1>Products- Fetch API</h1>
+    <div>
+       <button onclick="getproductdetails()">Get Products</button>
+       <div id="root">
+            document.getcreateElement('div')
+            <h1>MBJ Women's Solid Short Sleeve Boat Neck V</h1>
+             <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" width="400px" height="400px">
+          
+          <div>
+            <h1>MBJ Women's Solid Short Sleeve Boat Neck V</h1>
+            <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" width="400px" height="400px">
+         </div>
+         <div>
+            <h1>MBJ Women's Solid Short Sleeve Boat Neck V</h1>
+            <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" width="400px" height="400px">
+         </div>
+       </div>
+     <div>
+
+     </div>
+     <div>
+
+     </div>
+   </div>
+   <script>
+         
+       var products = [];
+      function getproductdetails(){   //asynchronous call
+          fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then((json) => {
+            console.log(json);
+            products= json;
+            console.log(products);
+            }
+            )
+        }
+       console.log("Start");
+      
+      setTimeout(() => { console.log("I am from Task Queue")} , 10);
+      getproductdetails();                                                        //web api -> fetch -> server -> res ->
+
+      console.log("End"); 
+
+   </script>
+</body>
+</html>

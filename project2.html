@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .image-container {
+          display: flex;
+          flex-direction: row;
+          width: 50%;
+          padding-left: 60px;
+          
+       }
+        .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: lightcoral;
+      } 
+
+       #demo {
+          text-align: center;
+       }
+    </style>
+</head>
+<body style="background-color: lightcoral;">
+   <div class="container">
+     <h1 id="demo" style="align-content: center;">OG</h1>
+     <div class="image-container">
+        <img src="./images/pk.jpg">
+        <button onclick="red()">red</button>
+     </div>
+     <div class="image-container">
+        <img src="./images/priyanka-mohan-1 - Copy.png">
+        <button onclick="pink()">pink</button>
+     </div>
+     <div class="image-container">
+        <img src="./images/sujeeth.jpeg">
+        <button onclick="black()">black</button>
+     </div>
+   </div>
+    
+   <script>
+      function red() {
+        document.body.style.backgroundColor = "darkred";
+        document.getElementById('demo').style.color = "white";
+      }
+
+      function pink() {
+        document.body.style.backgroundColor = "pink";
+      }
+
+      function black() {
+        document.body.style.backgroundColor = "black";
+      }
+
+   </script>
+</body>
+</html>
+
+ <!-- .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightcoral;
+ } -->

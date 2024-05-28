@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>JS is Sync Prog Lang</h1>
+   <div style="width: 500px;height: 500px;border: 2px solid red;">
+      <button onclick="getstudentdetails()">Get Students data</button>
+      <div>
+        <h1>Students Info</h1>
+      </div>
+   </div>
+   <script>
+      console.log("HTML5");
+      console.log("CSS3");
+      console.log("BOOTSTRAP");
+      console.log("JS");
+      console.log("REACTJS");
+      //async ??
+      function getstudentdetails() {
+         console.log("Request to server");
+          //response => data
+          // AJAX => req
+          // res => JSON
+          const studs = [
+            { name : 'a',
+              rollno : 1,
+            },
+            {
+               name : 'b',
+               rollno : 2,
+            }
+          ]
+          // dynamic js => table
+         console.log("display");
+      }
+   </script> 
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <script>
+     // we should create html content using javascript.
+     var rootElement = document.createElement('div');
+     rootElement.id = "root";
+     rootElement.className = "parent";
+     rootElement.style.backgroundColor = "red";
+     var textNode = document.createTextNode("The Power of JavaScript");
+     
+     var myh1 = document.createElement('h1');
+     myh1.innerHTML = "Node.js";
+     
+     var myh2 = document.createElement('h1');
+     myh2.innerHTML = "Single Page Application";
+
+     // innerHTML vs innerText
+
+     var myh3 = document.createElement('h1');
+     myh3.innerHTML = "Type Script";
+
+     rootElement.appendChild(textNode);
+     rootElement.appendChild(myh1);
+     rootElement.appendChild(myh2);
+     rootElement.appendChild(myh3);
+     console.log(rootElement);
+
+     document.body.appendChild(rootElement);
+     
+   </script>
+</body>
+</html>
